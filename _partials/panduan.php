@@ -47,7 +47,7 @@
             <div class="card-content pl-0">
               <h5 class="orange-text text-lighten-2 my-2">Terakhir <i class="material-icons right pt-1 green-text text-lighten-2">looks_3</i></h5>
               <hr>
-              <p>Login, kemudian masuk ke menu Diagnosa mandiri kemudian, isikan gejala yang Anda derita <a href="./login.php" class="light-blue-text"><em>Tanya Dokter!</em></a></p>
+              <p>Login, kemudian masuk ke menu Diagnosa mandiri kemudian, isikan gejala yang Anda derita <a href="./auth/login.php" class="light-blue-text"><em>Tanya Dokter!</em></a></p>
             </div>
           </div>
         </div>
