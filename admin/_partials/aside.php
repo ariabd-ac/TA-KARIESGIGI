@@ -16,7 +16,7 @@
   <div class="nav-wrapper">
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="./index.php">
+        <a class="nav-link" href="./index.php">
           <i class="material-icons">edit</i>
           <span>Dashboard</span>
         </a>
@@ -28,7 +28,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="add-new-post.html">
+        <a class="nav-link " href="./penyakit.php">
           <i class="material-icons">note_add</i>
           <span>Data Penyakit</span>
         </a>
