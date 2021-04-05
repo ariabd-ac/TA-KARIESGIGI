@@ -17,14 +17,28 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
 <script src="./assets/js/index.js"></script>
 
+<!-- swal -->
+<!-- <script src="../libs/SwerrtAlert2/package/dist/sweetalert2.all.min.js"></script>
+<script src="../libs/SwerrtAlert2/package/dist/sweetalert2.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+
+
+
 <!-- datatables -->
+<script type="text/javascript" src="../libs/DataTables/datatables.min.js"></script>
+<script src="../libs/DataTables/DataTables-1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="../libs/DataTables/DataTables-1.10.18/js/dataTables.bootstrap4.min.js"></script>
+<script src="./assets/js/jquery.rowspanizer.min.js"></script>
 <script>
   $(document).ready(function() {
     $('#table').DataTable();
+    $('table').rowspanizer();
+    // $('row').rowspanizer();
+
   });
 </script>
 <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-<script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+<!-- <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script> -->
 
 
 <!-- JavaScript Bundle with Popper -->

@@ -18,6 +18,10 @@ continueBtn.onclick = () => {
           location.href = "../users/";
         } if (data === "admin") {
           location.href = "../admin/";
+        } if (data === "doctor") {
+          location.href = "../dokter/";
+        } if (data === "isDoctor") {
+          location.href = "../dokter/";
         }
         else {
           errorText.style.display = "block";

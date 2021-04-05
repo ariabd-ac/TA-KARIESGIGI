@@ -183,10 +183,29 @@ include './_partials/script.php';
 <?php
 if (isset($_POST['simpan-gejala'])) {
   include_once "../config/koneksi.php";
+
   $kode_gejala = trim(mysqli_real_escape_string($conn, $_POST['kode-gejala']));
   $nama_gejala = trim(mysqli_real_escape_string($conn, $_POST['nama-gejala']));
 
-  mysqli_query($conn, "INSERT INTO tabel_gejala (kode_gejala, nama_gejala) VALUES ('$kode_gejala', '$nama_gejala') ") or die(mysqli_error($conn)); ?>
+  $query = mysqli_query($conn, "SELECT kode_gejala FROM tabel_gejala WHERE kode_gejala = '$kode_gejala'");
+  if ($query->num_rows > 0) {
+?>
+    <script>
+      // alert('Data sudah ada boiii')
+      Swal.fire({
+        position: 'top-end',
+        type: 'warning',
+        title: 'Kode gejala sudah ada',
+        showConfirmButton: false,
+        timer: 3000
+      })
+    </script>
+  <?php } else {
+    mysqli_query($conn, "INSERT INTO tabel_gejala (kode_gejala, nama_gejala) VALUES ('$kode_gejala', '$nama_gejala') ") or die(mysqli_error($conn));
+  } ?>
+
+
+
   <script>
     window.location = 'gejala.php'
   </script>

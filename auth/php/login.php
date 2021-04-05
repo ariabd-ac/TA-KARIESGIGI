@@ -29,6 +29,24 @@ if (!empty($email) && !empty($password)) {
                 } else {
                     echo "error";
                 }
+            } else if ($_SESSION['level'] == 'doctor') {
+                $status = "Active now";
+                $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
+                if ($sql2) {
+                    $_SESSION['unique_id'] = $row['unique_id'];
+                    echo "doctor";
+                } else {
+                    echo "error";
+                }
+            } else if ($_SESSION['level'] == 'isDoctor') {
+                $status = "Active now";
+                $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
+                if ($sql2) {
+                    $_SESSION['unique_id'] = $row['unique_id'];
+                    echo "isDoctor";
+                } else {
+                    echo "error";
+                }
             }
         } else {
             echo "Email or Password is Incorrect!";

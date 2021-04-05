@@ -22,7 +22,8 @@ if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'user') {
 <body>
   <div class="wrapper">
     <section class="form signup">
-      <header>Registrasi</header>
+      <header>Registrasi Users</header>
+      <a class="btn btn-primary" href="./dokter.php">Registrasi Dokter</a>
       <form action="#" method="POST" enctype="multipart/form-data" autocomplete="off">
         <div class="error-text"></div>
         <div class="field input">

@@ -34,7 +34,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="form-components.html">
+        <a class="nav-link " href="./rules.php">
           <i class="material-icons">view_module</i>
           <span>Rules</span>
         </a>
@@ -55,6 +55,12 @@
         <a class="nav-link " href="./chatbot.php">
           <i class="material-icons">error</i>
           <span>Chatbot</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./management.php">
+          <i class="material-icons">error</i>
+          <span>Management Users</span>
         </a>
       </li>
     </ul>

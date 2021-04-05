@@ -28,8 +28,7 @@
   <link rel="stylesheet" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
 
   <!-- sweetalert -->
-  <script src="sweetalert2.min.js"></script>
-  <link rel="stylesheet" href="sweetalert2.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
 
 
 </head>
