@@ -16,7 +16,7 @@ include_once "../config/koneksi.php";
 //   //   header("location: 404.php");
 //   // }
 // }
-if ($_SESSION['level']  != 'users') {
+if ($_SESSION['level']  != 'user') {
   header("location: 404.php");
 }
 ?>

@@ -15,7 +15,7 @@ if ($_SESSION['level']  != 'user') {
 <?php
 include './_partials/head.php';
 ?>
-<div class="container-fluid">
+<div class="container-fluid" style="height: 100vh;overflow: scroll;">
   <div class="row">
     <?php
     include './_partials/aside.php';
@@ -28,7 +28,7 @@ include './_partials/head.php';
       <div class="main-content-container container-fluid px-4">
         <!-- Small Stats Blocks -->
 
-        <div class="row mt-4" style="">
+        <div class="row" style="">
           <div class="content-chat">
             <div class="wrapper-chat">
               <section class="chat-area">
