@@ -37,9 +37,13 @@ include './_partials/head.php';
             Hai <?php echo $row['fname'] . " " . $row['lname'] ?>
           </h2>
 
+          <a href="" class="btn btn-primary btn-round" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</a>
+
 
         </div>
         <!-- End Small Stats Blocks -->
+
+
       </div>
       <?php
       include './_partials/footer.php';

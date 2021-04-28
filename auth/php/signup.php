@@ -41,6 +41,9 @@ if (!empty($username) && !empty($fname) && !empty($lname) && !empty($email) && !
                 $select_sql2 = mysqli_query($conn, "SELECT * FROM users WHERE email = '{$email}'");
                 if (mysqli_num_rows($select_sql2) > 0) {
                   $result = mysqli_fetch_assoc($select_sql2);
+                  $_SESSION['username'] = $result['username'];
+                  $_SESSION['fname'] = $result['fname'];
+                  $_SESSION['lname'] = $result['lname'];
                   $_SESSION['unique_id'] = $result['unique_id'];
                   $_SESSION['level'] = $result['level'];
                   echo "success";

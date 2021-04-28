@@ -42,14 +42,14 @@ include './_partials/head.php';
           <div class="col-md-12">
             <div class="card mt-4">
               <div class="card-header">
-                <h4 class="card-title"> Tabel Penyakit Gigi dan Mulut</h4>
+                <h4 class="card-title"> Tambahkan Rules</h4>
                 <div class="update pull-right">
                   <a href="" class="btn btn-primary btn-round" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</a>
                 </div>
               </div>
               <div class="card-body">
                 <div class="">
-                  <table class="table table-striped  table-bordered" id="table">
+                  <table class="table table-striped  table-bordered" id="">
                     <thead class=" text-primary">
                       <!-- <th class="text-center">&nbsp;&nbsp;&nbsp;&nbsp;#&nbsp;&nbsp;&nbsp;&nbsp;</th> -->
                       <th class="text-center">Kode Penyakit </th>
@@ -62,6 +62,8 @@ include './_partials/head.php';
                       $no = 1;
                       $query = "SELECT tr.kode_penyakit, tp.nama_penyakit, tg.nama_gejala FROM tabel_rules tr, tabel_penyakit tp, tabel_gejala tg WHERE tr.kode_penyakit = tp.kode_penyakit AND tr.kode_gejala = tg.kode_gejala ORDER BY tr.kode_penyakit ASC";
                       $sqls = mysqli_query($conn, $query) or die(mysqli_error($conn));
+                      // var_dump($sqls);
+                      // die();
                       foreach ($sqls as $sql) { ?>
                         <tr>
                           <!-- <td class="text-center"><?= $no++ ?></td> -->
@@ -71,7 +73,8 @@ include './_partials/head.php';
                           <td class="text-center">
                             <!-- <a href="#" class="btn btn-primary btn-round btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?php echo $sql['kode_penyakit']; ?>">Edit</a> -->
                             <!-- <hr> -->
-                            <a href="#" class="btn btn-danger btn-round btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?php echo $sql['kode_penyakit']; ?>">Del</a>
+                            <!-- <a href="#" class="btn btn-danger btn-round btn-sm" data-bs-toggle="modal" data-bs-target="#hapusModal<?php echo $sql['kode_penyakit']; ?>">Del</a> -->
+                            <a href="del-rules.php?kode=<?= $sql['kode_penyakit'] ?>" class="btn btn-danger btn-round btn-sm">Del</a>
                           </td>
                         </tr>
                       <?php } ?>
@@ -95,13 +98,8 @@ include './_partials/head.php';
               </div>
               <div class="modal-body">
                 <form method="post">
-                  <!-- <div class="mb-3">
-                    <label for="kodeGejala" class="form-label">Kode Penyakit</label>
-                    <input type="text" class="form-control" id="kode-penyakit" aria-describedby="kode-penyakit" name="kode-penyakit" placeholder="Contoh: P01, P02 ...">
-                  </div> -->
                   <div class="mb-3">
                     <label for="nama_gejala" class="form-label">Nama Penyakit</label>
-                    <!-- <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit"> -->
                     <?php
                     $sqls = mysqli_query($conn, "SELECT * FROM tabel_penyakit") or die(mysqli_error($conn)); ?>
                     <select name="kode-penyakit" id="kode-penyakit" class="form-control">
@@ -136,82 +134,6 @@ include './_partials/head.php';
           </div>
         </div>
 
-        <!-- modals edit gejala -->
-        <?php
-        $no = 1;
-        $sqls = mysqli_query($conn, "SELECT * FROM tabel_penyakit") or die(mysqli_error($conn));
-        foreach ($sqls as $sql) { ?>
-          <div class="modal fade" id="editModal<?php echo $sql['kode_penyakit']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form method="post">
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Nama Penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>">
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Nama Penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>">
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Keterangan</label>
-                      <input type="text" class="form-control" id="keterangan" name="keterangan" value="<?= $sql['keterangan'] ?>">
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Solusi</label>
-                      <input type="text" class="form-control" id="solusi" name="solusi" value="<?= $sql['solusi'] ?>">
-                    </div>
-                    <button type="submit" name="update-penyakit" class="btn btn-primary">Submit</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        <?php } ?>
-
-        <!-- hapus modal -->
-        <?php
-        $no = 1;
-        $sqls = mysqli_query($conn, "SELECT * FROM tabel_penyakit") or die(mysqli_error($conn));
-        foreach ($sqls as $sql) { ?>
-          <div class="modal fade" id="hapusModal<?php echo $sql['kode_penyakit']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Yakin ingin menghapus?</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form method="post">
-                    <div class="mb-3">
-                      <label for="kodeGejala" class="form-label">Kode Gejala</label>
-                      <input type="text" class="form-control" id="kode-penyakit" aria-describedby="kode-gejala" name="kode-penyakit" placeholder="Contoh: G01, G02 ..." value="<?= $sql['kode_penyakit'] ?>" readonly>
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Nama penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>" readonly>
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Keterangan</label>
-                      <input type="text" class="form-control" id="keterangan" name="keterangan" value="<?= $sql['keterangan'] ?>" readonly>
-                    </div>
-                    <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Solusi</label>
-                      <input type="text" class="form-control" id="solusi" name="solusi" value="<?= $sql['solusi'] ?>" readonly>
-                    </div>
-                    <button type="submit" name="hapus-penyakit" class="btn btn-primary">Hapus</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        <?php } ?>
-
         <?php
         include './_partials/footer.php';
         ?>
@@ -241,37 +163,3 @@ if (isset($_POST['simpan-rule'])) {
         </script>";
 }
 ?>
-
-
-<!-- edit gejala -->
-
-<!-- PROSES UPDATE GEJALA -->
-<?php
-if (isset($_POST['update-penyakit'])) {
-  include_once "../config/koneksi.php";
-  $kode_penyakit = trim(mysqli_real_escape_string($conn, $_POST['kode-penyakit']));
-  $nama_penyakit = trim(mysqli_real_escape_string($conn, $_POST['nama-penyakit']));
-  $keterangan    = trim(mysqli_real_escape_string($conn, $_POST['keterangan']));
-  $solusi        = trim(mysqli_real_escape_string($conn, $_POST['solusi']));
-
-  mysqli_query($conn, "UPDATE tabel_penyakit SET nama_penyakit = '$nama_penyakit', keterangan = '$keterangan', solusi = '$solusi' WHERE kode_penyakit = '$kode_penyakit'") or die(mysqli_error($conn)); ?>
-
-  <script>
-    window.location = 'penyakit.php'
-  </script>
-<?php } ?>
-
-<?php
-if (isset($_POST['hapus-penyakit'])) {
-  include_once "../config/koneksi.php";
-  $kode_penyakit = trim(mysqli_real_escape_string($conn, $_POST['kode-penyakit']));
-  $nama_penyakit = trim(mysqli_real_escape_string($conn, $_POST['nama-penyakit']));
-  $keterangan    = trim(mysqli_real_escape_string($conn, $_POST['keterangan']));
-  $solusi        = trim(mysqli_real_escape_string($conn, $_POST['solusi']));
-
-  mysqli_query($conn, "DELETE FROM tabel_penyakit WHERE kode_penyakit = '$kode_penyakit'") or die(mysqli_error($con)); ?>
-
-  <script>
-    window.location = 'penyakit.php'
-  </script>
-<?php } ?>

@@ -10,7 +10,6 @@ $(document).ready(function () {
 	$('select').formSelect();
 	$('.modal').modal();
 
-	getGejala();
 
 	$(".article").slice(0, 3).show();
 

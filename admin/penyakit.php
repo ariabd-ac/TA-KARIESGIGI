@@ -134,8 +134,8 @@ include './_partials/head.php';
                 <div class="modal-body">
                   <form method="post">
                     <div class="mb-3">
-                      <label for="nama_penyakit" class="form-label">Nama Penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>">
+                      <label for="nama_penyakit" class="form-label">Kode Penyakit</label>
+                      <input type="text" class="form-control" id="nama-penyakit" name="kode-penyakit" value="<?= $sql['kode_penyakit'] ?>" readonly>
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Nama Penyakit</label>

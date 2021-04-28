@@ -16,13 +16,13 @@
   <div class="nav-wrapper">
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link active" href="index.html">
+        <a class="nav-link active" href="./index.php">
           <i class="material-icons">edit</i>
           <span>Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="./gejala.php">
+        <a class="nav-link " href="./diagnosa-mandiri.php">
           <i class="material-icons">vertical_split</i>
           <span>Diagnosa Mandiri</span>
         </a>

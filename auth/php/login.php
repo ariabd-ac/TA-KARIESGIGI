@@ -15,6 +15,9 @@ if (!empty($email) && !empty($password)) {
                 $status = "Active now";
                 $sql2 = mysqli_query($conn, "UPDATE users SET status = '{$status}' WHERE unique_id = {$row['unique_id']}");
                 if ($sql2) {
+                    $_SESSION['username'] = $row['username'];
+                    $_SESSION['fname'] = $row['fname'];
+                    $_SESSION['lname'] = $row['lname'];
                     $_SESSION['unique_id'] = $row['unique_id'];
                     echo "success";
                 } else {
