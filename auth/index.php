@@ -62,7 +62,7 @@ if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'user') {
           <input type="file" name="image" accept="image/x-png,image/gif,image/jpeg,image/jpg">
         </div>
         <div class="field button">
-          <input type="submit" name="submit" value="Continue to Chat">
+          <input type="submit" name="submit" value="Continue">
         </div>
       </form>
       <div class="link">Already signed up? <a href="login.php">Login now</a></div>

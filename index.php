@@ -21,8 +21,8 @@ session_start();
 			/* opacity: 0.5; */
 		}
 	</style>
-	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-	<df-messenger intent="WELCOME" chat-title="latdoc" agent-id="bd12c91f-1eec-4692-8fa8-10a429495a55" language-code="id"></df-messenger>
+	<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+	<df-messenger intent="WELCOME" chat-title="latdoc" agent-id="bd12c91f-1eec-4692-8fa8-10a429495a55" language-code="id"></df-messenger> -->
 </head>
 
 <body>

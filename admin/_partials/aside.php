@@ -40,7 +40,7 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link " href="tables.html">
+        <a class="nav-link " href="./history.php">
           <i class="material-icons">table_chart</i>
           <span>History</span>
         </a>

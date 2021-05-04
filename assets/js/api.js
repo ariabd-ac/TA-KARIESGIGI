@@ -1,13 +1,19 @@
 const api_key = '9c8ef40f733d4816972699040cf6cda6';
 
+$.ajaxSetup({
+	headers: {
+		'Authorization': '9c8ef40f733d4816972699040cf6cda6'
+	}
+});
+
 // GET REST API DARI http://newsapi.org/
-$.getJSON('http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey='+api_key, function(data) {
-    
+$.getJSON('http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey=' + api_key, function (data) {
+
 	const count_article = data.articles.length;
 	let article = "";
-	
-	for(let i = 0; i < count_article; i++) {
-		article += 	`
+
+	for (let i = 0; i < count_article; i++) {
+		article += `
 							<div class="col s12 m4 article">
 								<div class="card z-depth-2">
 									<div class="card-image">
@@ -25,15 +31,15 @@ $.getJSON('http://newsapi.org/v2/top-headlines?country=id&category=health&apiKey
 							</div>
 						`;
 	}
-	
+
 	$('#article').html(article);
-	
+
 	$(".article").slice(0, 3).show();
 });
 
 // FUNGSI 'ON ERROR' KETIKA URL IMG GAGAL DIBUKA ATAU RUSAK
 function imgError(image) {
-	image.onerror 	= "";
-	image.src 		= "./assets/img/image"+ (Math.floor(Math.random() * 3) + 1) +".jpeg";
+	image.onerror = "";
+	image.src = "./assets/img/image" + (Math.floor(Math.random() * 3) + 1) + ".jpeg";
 	return true;
 }

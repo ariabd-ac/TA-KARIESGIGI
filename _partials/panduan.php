@@ -32,7 +32,7 @@
             <div class="card-content pl-0">
               <h5 class="orange-text text-lighten-2 my-2">Kedua <i class="material-icons right pt-1 red-text text-lighten-2">looks_two</i></h5>
               <hr>
-              <p>Buatlah urutan dari gejala yang dominan hingga yang resesif muncul pada anak Anda.</p>
+              <p>Buatlah urutan dari gejala yang dominan hingga yang resesif muncul pada Anda.</p>
             </div>
           </div>
         </div>
