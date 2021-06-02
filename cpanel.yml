@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/svnvbkdl/ariabd.tech/ta
-    - /bin cp * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
