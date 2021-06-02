@@ -48,7 +48,7 @@ include './_partials/head.php';
             <div class="messages">
               <div class="messages-content"></div>
             </div>
-            <form class="message-box" id="mymsg" method="POST">
+            <form class="message-box" id="mymsg" method="POST" autocomplete="off">
               <input type="text" id="MSG" name="MSG" class="message-input" placeholder="Type message...">
 
               <i class="fas fa-microphone" id="start-record-btn"></i>

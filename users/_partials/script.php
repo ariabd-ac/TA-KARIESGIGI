@@ -12,6 +12,8 @@
 <script src="./assets/js/chat.js"></script>
 
 <script src="./assets/js/check.js"></script>
+<script src="./assets/js/gejalaCheck.js"></script>
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- JavaScript Bundle with Popper -->

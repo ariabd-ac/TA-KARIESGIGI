@@ -3,7 +3,7 @@
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     <a id="logo-container" href="#" class="brand-logo">
       <img class="mt-1" src="./assets/img/icons/medical-192x192.png" alt="Logo" width="50px;" />
-      <span class="hide-on-small-only judul-text" style="position: relative; top: -12px;">Tanya Dokter</span>
+      <span class="hide-on-small-only judul-text" style="position: relative; top: -12px;">Tanya Dokter Gigi</span>
     </a>
     <ul class="right">
       <li>

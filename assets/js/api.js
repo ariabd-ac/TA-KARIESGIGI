@@ -1,8 +1,10 @@
-const api_key = '9c8ef40f733d4816972699040cf6cda6';
+// const api_key = '9c8ef40f733d4816972699040cf6cda6';
+const api_key = '1ee5f2c97b2c42cfa2f6dbf6b3b78252';
 
 $.ajaxSetup({
 	headers: {
-		'Authorization': '9c8ef40f733d4816972699040cf6cda6'
+		// 'Authorization': '9c8ef40f733d4816972699040cf6cda6'
+		'Authorization': 'api_key',
 	}
 });
 

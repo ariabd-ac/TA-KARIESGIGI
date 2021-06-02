@@ -37,6 +37,26 @@ include './_partials/head.php';
       <div class="main-content-container container-fluid px-4">
         <!-- Small Stats Blocks -->
         <div class="row mt-4" style="">
+          <div class="col-md-6 col-lg-6 col-6">
+            <div class="card">
+              <div class="card-header">
+                Jumlah pemeriksa
+              </div>
+              <div class="card-body">
+                2030 Pasien
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-6">
+            <div class="card">
+              <div class="card-header">
+                Jumlah pemeriksa
+              </div>
+              <div class="card-body">
+                2030 Pasien
+              </div>
+            </div>
+          </div>
           <?php
           $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
           if (mysqli_num_rows($sql) > 0) {

@@ -39,23 +39,50 @@ if (!isset($_POST['periksa'])) { ?>
               </div>
               <div class="card-body">
                 <form method="post">
-                  <?php
-                  $sqls = mysqli_query($conn, "SELECT * FROM tabel_gejala") or die(mysqli_error($conn));
-                  while ($sql = mysqli_fetch_array($sqls)) { ?>
-                    <div class="row">
-                      <div class="col-md-1" style="margin-left: 10px;">
-                        <input type="checkbox" name="nama-gejala[]" value="<?= $sql['nama_gejala'] ?>">
-                      </div>
-                      <div class="col-md-6">
-                        <?= $sql['kode_gejala'] ?> - <?= $sql['nama_gejala'] ?> <br>
-                      </div>
+                  <!-- <div class="" style="height: 40px; width: 50;background-color: brown;"></div>
+                  <div class="" style="height: 40px; width: 50;background-color: red;"></div>
+                  <div class="" style="height: 40px; width: 50;background-color: pink;"></div>
+                  <div class="" style="height: 40px; width: 50;background-color: blue;"></div>
+                  <div class="" style="height: 40px; width: 50;background-color: yellow;"></div> -->
+                  <div class="row">
+                    <div class="col-md-5">
+                      <?php
+                      $sqls = mysqli_query($conn, "SELECT * FROM tabel_gejala WHERE kode_gejala BETWEEN 'G1' AND 'G17'") or die(mysqli_error($conn));
+                      while ($sql = mysqli_fetch_array($sqls)) { ?>
+                        <div class="row" style="">
+                          <div class="col-md-1" style="margin-left: 10px;">
+                            <input type="checkbox" name="nama-gejala[]" value="<?= $sql['nama_gejala'] ?>" id="nama_gejala">
+                          </div>
+                          <div class="col-md-9" style="">
+                            <!-- <?= $sql['kode_gejala'] ?> - -->
+                            <?= $sql['nama_gejala'] ?> <br>
+                          </div>
+                        </div>
+                        <hr>
+                      <?php } ?>
                     </div>
-                    <hr>
-                  <?php } ?>
+                    <div class="col-md-7">
+                      <?php
+                      $sqls = mysqli_query($conn, "SELECT * FROM tabel_gejala WHERE kode_gejala BETWEEN 'G18' AND 'G9'") or die(mysqli_error($conn));
+                      while ($sql = mysqli_fetch_array($sqls)) { ?>
+                        <div class="row" style="">
+                          <div class="col-md-1" style="margin-left: 10px;">
+                            <input type="checkbox" name="nama-gejala[]" value="<?= $sql['nama_gejala'] ?>" id="nama_gejala">
+                          </div>
+                          <div class="col-md-9" style="">
+                            <!-- <?= $sql['kode_gejala'] ?> - -->
+                            <?= $sql['nama_gejala'] ?> <br>
+                          </div>
+                        </div>
+                        <hr>
+                      <?php } ?>
+                    </div>
+                  </div>
+
                   <div class="row">
                     <div class="update ml-auto mr-auto">
                       <button type="reset" class="btn btn-info btn-round">Reset</button>
-                      <button type="submit" name="periksa" class="btn btn-success btn-round">Periksa</button>
+                      <button type="submit" id="submitbtn" name="periksa" class="btn btn-success btn-round">Periksa</button>
                     </div>
                   </div>
                 </form>
@@ -80,12 +107,23 @@ if (!isset($_POST['periksa'])) { ?>
   $gejala      = $_POST['nama-gejala'];
   $jumlah      = count($_POST['nama-gejala']);
   // $nama_gejala = $_POST['nama-gejala'];
-
-  if ($jumlah < 2 || $jumlah > 10) {
+  if ($jumlah == null) {
     echo "<script>
-            alert('Gejala yang di pilih terlalu sedikit atau terlalu banyak');
+            alert('Pilih lah gejala');
             window.location='./diagnosa-mandiri.php';
         </script>";
+    exit;
+  } elseif ($jumlah < 2) {
+    echo "<script>
+            alert('Gejala yang di pilih minimal 2');
+            window.location='./diagnosa-mandiri.php';
+        </script>";
+    exit;
+  } elseif ($jumlah > 10) {
+    echo "<script>
+            alert('Gejala yang di pilih maximal 10');
+              window.location='./diagnosa-mandiri.php';
+          </script>";
     exit;
   }
 

@@ -7,3 +7,8 @@ hasil.toFixed(2);
 
 console.log('sama pakar: ', hasil);
 
+// let nama_gejala = document.getElementById('nama_gejala');
+// let submitbtn = document.getElementById('submitbtn');
+
+
+
