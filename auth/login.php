@@ -33,6 +33,8 @@ if (isset($_SESSION['unique_id'])) {
   <script src="./assets/js/pass-show-hide.js"></script>
   <script src="./assets/js/login.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
 
 </body>
 

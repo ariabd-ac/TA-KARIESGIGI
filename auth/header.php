@@ -8,7 +8,7 @@
   <title>SP Karies Gigi</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-
+  <script src="../libs/node_modules/sweetalert2/dist/sweetalert2.min.css"></script>
 
 
 </head>

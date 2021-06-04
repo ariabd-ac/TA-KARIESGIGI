@@ -24,6 +24,10 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
 <script src="./assets/js/index.js"></script>
 
+<!-- swett -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+
 </body>
 
 </html>

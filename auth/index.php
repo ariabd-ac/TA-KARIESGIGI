@@ -71,6 +71,8 @@ if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'user') {
 
   <script src="./assets/js/pass-show-hide.js"></script>
   <script src="./assets/js/signup.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
 
 </body>
 
