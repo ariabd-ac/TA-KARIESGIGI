@@ -63,6 +63,12 @@
           <span>Management Users</span>
         </a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link " href="./artikel.php">
+          <i class="material-icons">error</i>
+          <span>Artikel</span>
+        </a>
+      </li>
     </ul>
   </div>
 </aside>
