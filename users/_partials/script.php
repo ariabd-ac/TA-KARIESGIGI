@@ -25,8 +25,8 @@
 <script src="./assets/js/index.js"></script>
 
 <!-- swett -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script> -->
 
 </body>
 

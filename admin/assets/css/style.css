@@ -41,7 +41,7 @@ body{
   justify-content: center;
 }
 .content-chat{
-  background-color: #333;
+  /* background-color: #333; */
   display: flex;
   width: 100vw;
   align-items: center;

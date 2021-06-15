@@ -185,60 +185,7 @@ include './_partials/script.php';
 
 <!-- add gejala -->
 
-<?php
-if (isset($_POST['simpan-penyakit'])) {
-  include_once "../config/koneksi.php";
-  $kode_penyakit = trim(mysqli_real_escape_string($conn, $_POST['kode-penyakit']));
-  $nama_penyakit = trim(mysqli_real_escape_string($conn, $_POST['nama-penyakit']));
-  $keterangan    = trim(mysqli_real_escape_string($conn, $_POST['keterangan']));
-  $solusi        = trim(mysqli_real_escape_string($conn, $_POST['solusi']));
 
-  $query = mysqli_query($conn, "SELECT kode_penyakit FROM tabel_penyakit WHERE kode_penyakit = '$kode_penyakit'");
-
-
-  if ($query->num_rows > 0) {
-    # code...
-?>
-    <script>
-      // alert('Data sudah ada boiii')
-      Swal.fire({
-        position: 'top-end',
-        type: 'warning',
-        title: 'Kode penyakit sudah ada',
-        showConfirmButton: false,
-        timer: 3000
-      })
-    </script>
-  <?php } else {
-    mysqli_query($conn, "INSERT INTO tabel_penyakit (kode_penyakit, nama_penyakit, keterangan,solusi) VALUES ('$kode_penyakit', '$nama_penyakit', '$keterangan', '$solusi')") or die(mysqli_error($conn));
-  } ?>
-
-
-
-
-  <script>
-    window.location = 'penyakit.php'
-  </script>
-
-<?php } ?>
-
-<!-- edit gejala -->
-
-<!-- PROSES UPDATE GEJALA -->
-<?php
-if (isset($_POST['update-penyakit'])) {
-  include_once "../config/koneksi.php";
-  $kode_penyakit = trim(mysqli_real_escape_string($conn, $_POST['kode-penyakit']));
-  $nama_penyakit = trim(mysqli_real_escape_string($conn, $_POST['nama-penyakit']));
-  $keterangan    = trim(mysqli_real_escape_string($conn, $_POST['keterangan']));
-  $solusi        = trim(mysqli_real_escape_string($conn, $_POST['solusi']));
-
-  mysqli_query($conn, "UPDATE tabel_penyakit SET nama_penyakit = '$nama_penyakit', keterangan = '$keterangan', solusi = '$solusi' WHERE kode_penyakit = '$kode_penyakit'") or die(mysqli_error($conn)); ?>
-
-  <script>
-    window.location = 'penyakit.php'
-  </script>
-<?php } ?>
 
 <?php
 if (isset($_POST['aktif-dokter'])) {

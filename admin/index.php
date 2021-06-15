@@ -51,35 +51,35 @@ include './_partials/head.php';
 
           <div class="row text-center m-b-10">
 
-            <div class="col-lg-3 col-md-6 m-b-40 m-t-30">
+            <div class="col-lg-3 col-md-6 col-sm-3 col-xs-3 m-b-40 m-t-30">
               <div class="card card-outline-inverse" style="background-color:#189bed; border-color:#189bed;">
                 <div class="card-body">
                   <p style="color: #fafafa">Data Gejala</p>
-                  <a href="./gejala.php" class="btn waves-effect btn-lg btn-secondary" style="background-color:#1693e0; border-color:#1693e0; margin: 5px;" title="Hidrology Bank Data"><i class="fa fa-trash"></i></a>
+                  <a href="./gejala.php" class="btn waves-effect btn-lg btn-secondary" style="background-color:#1693e0; border-color:#1693e0; margin: 5px;" title="Data gejala"><i class="fa fa-heartbeat"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 m-t-30">
+            <div class="col-lg-3 col-md-6 col-sm-3 col-xs-3 m-t-30">
               <div class="card card-outline-inverse" style="background-color: #35db64; border-color: #35db64;">
                 <div class="card-body">
                   <p style="color: #fafafa">Data Penyakit</p>
-                  <a href="./penyakit.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#32d15f; border-color:#32d15f; margin: 5px;" title="Task Progression 2019"><i class="fa fa-bar-chart-o"></i></a>
+                  <a href="./penyakit.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#32d15f; border-color:#32d15f; margin: 5px;" title="Data penyakit"><i class="fas fa-viruses"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 m-t-30">
+            <div class="col-lg-3 col-md-6 col-sm-3 col-xs-3 m-t-30">
               <div class="card card-outline-inverse" style="background-color: #eb964b; border-color: #eb964b;">
                 <div class="card-body">
                   <p style="color: #fafafa">Rules</p>
-                  <a href="./rules.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#de8e47; border-color:#de8e47; margin: 5px;" title="APEMASI"><i class="fa fa-gears"></i></a>
+                  <a href="./rules.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#de8e47; border-color:#de8e47; margin: 5px;" title="Rules"><i class="fa fa-bar-chart-o"></i></a>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 m-t-30">
+            <div class="col-lg-3 col-md-6 col-sm-3 col-xs-3 m-t-30">
               <div class="card card-outline-inverse" style="background-color: #39ccd4; border-color: #39ccd4;">
                 <div class="card-body">
                   <p style="font-size: 14.5px; color: #fafafa">Approve Dokter</p>
-                  <a href="./management.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#31b5bd; border-color:#31b5bd; margin: 5px;" title="CCTV Bendung"><i class="fa fa-pencil"></i></a>
+                  <a href="./management.php" class="btn waves-effect waves-light btn-lg btn-secondary" style="background-color:#31b5bd; border-color:#31b5bd; margin: 5px;" title="Approve Dokter"><i class="fa fa-users"></i></a>
                 </div>
               </div>
             </div>

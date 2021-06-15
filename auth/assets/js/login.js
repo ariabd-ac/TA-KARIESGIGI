@@ -13,19 +13,14 @@ continueBtn.onclick = () => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         let data = xhr.response;
-        if (data === "success") {
-          Swal.fire(
-            'Good job!',
-            success,
-            'success'
-          )
-          location.href = "../users/";
+        if (data === "isDoctor") {
+          location.href = "../dokter/";
         } if (data === "admin") {
           location.href = "../admin/";
         } if (data === "doctor") {
           location.href = "../dokter/";
-        } if (data === "isDoctor") {
-          location.href = "../dokter/";
+        } if (data === "success") {
+          location.href = "../users/";
         }
         else {
           errorText.style.display = "block";

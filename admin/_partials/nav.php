@@ -5,14 +5,14 @@
       <div class="input-group input-group-seamless ml-3">
         <div class="input-group-prepend">
           <div class="input-group-text">
-            <i class="fas fa-search"></i>
+            <!-- <i class="fas fa-search"></i> -->
           </div>
         </div>
-        <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search">
+        <!-- <input class="navbar-search form-control" type="text" placeholder="Search for something..." aria-label="Search"> -->
       </div>
     </form>
     <ul class="navbar-nav border-left flex-row ">
-      <li class="nav-item border-right dropdown notifications">
+      <!-- <li class="nav-item border-right dropdown notifications">
         <a class="nav-link nav-link-icon text-center" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <div class="nav-link-icon__wrapper">
             <i class="material-icons">&#xE7F4;</i>
@@ -48,7 +48,7 @@
           </a>
           <a class="dropdown-item notification__all text-center" href="#"> View all Notifications </a>
         </div>
-      </li>
+      </li> -->
       <?php
       $sql = mysqli_query($conn, "SELECT * FROM users WHERE unique_id = {$_SESSION['unique_id']}");
       if (mysqli_num_rows($sql) > 0) {
