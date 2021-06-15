@@ -53,21 +53,24 @@ include './_partials/head.php';
                   <!-- // foreach ($sqls as $sql) { ?> -->
                   <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xs-6 col-xl-6 mb-4">
                     <div class="card" style="padding: 10px;">
-                      <img src="./assets/images/artikel/<?= $sql['img'] ?>" alt="img-artikel" style="width: 30%;">
+                      <div class="img" style="">
+                        <img src="./assets/images/artikel/<?= $sql['img'] ?>" alt="img-artikel" style="height:100%; width: 100%;">
+                      </div>
                       <h3><?= $sql['title'] ?></h3>
-                      <p><?= $sql['content'] ?></p>
+                      <p style="display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;"><?= $sql['content'] ?></p>
                       <h6 style="text-align:right"><?= $sql['author'] ?></h6>
                       <h6 style="text-align:right"><?= $sql['created_at'] ?></h6>
                       <div class="action">
-                        <a href="#" class="btn btn-secondary btn-sm" title="edit">
+                        <a href='./edit-artikel.php?id=<?= $sql['id_artikel'] ?>' class="btn btn-secondary btn-sm" title="edit">
                           <i class="material-icons">edit</i>
                         </a>
                         <a href="#" class="btn btn-warning btn-sm" title="detail">
                           <i class="material-icons">zoom_in</i>
                         </a>
-                        <a href="#" class="btn btn-danger btn-sm" title="detail">
+                        <a href="./del-artikel.php?id=<?= $sql['id_artikel'] ?>" class="btn btn-danger btn-sm" title="detail">
                           <i class="material-icons">delete</i>
                         </a>
+
                       </div>
                     </div>
                   </div>
