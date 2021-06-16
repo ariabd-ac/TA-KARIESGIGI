@@ -47,9 +47,21 @@ session_start();
 	?>
 
 	<!-- Tab Artikel Kesehatan -->
+
+	<?php
+	include './_partials/custom_article.php'
+	?>
+
+
 	<?php
 	include './_partials/article.php'
 	?>
+
+
+
+
+
+
 
 
 	<!-- Tab Tentang -->

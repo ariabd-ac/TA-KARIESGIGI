@@ -139,39 +139,6 @@ include './_partials/head.php';
         </div>
       <?php } ?>
 
-      <!-- modals edit gejala -->
-      <?php
-      $no = 1;
-      $sqls = mysqli_query($conn, "SELECT * FROM users WHERE level = 'doctor'") or die(mysqli_error($conn));
-      foreach ($sqls as $sql) { ?>
-        <div class="modal fade" id="editModal<?php echo $sql['unique_id']; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div id="carouselExample" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img class="d-block w-100" src="../auth/php/images/<?php echo $sql['sip']; ?>">
-                      <!-- <?php
-                            var_dump($sql['sip']);
-                            echo $sql['sip'];
-                            ?> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      <?php } ?>
-
-      <!-- hapus modal -->
-
-
       <?php
       include './_partials/footer.php';
       ?>
