@@ -29,6 +29,14 @@
   <!-- <script src="../libs/node_modules/sweetalert2/dist/sweetalert2.min.css"></script> -->
 
 
+  <!-- swt -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+  <script src="https://kit.fontawesome.com/08186bef1d.js" crossorigin="anonymous"></script>
+
+  <!-- izy -->
+  <link rel="stylesheet" href="../libs/izitoast/dist/css/iziToast.min.css">
+
+
 </head>
 
 <body class="h-100">

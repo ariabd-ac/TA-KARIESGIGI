@@ -37,6 +37,25 @@ include './_partials/head.php';
             Hai <?php echo $row['fname'] . " " . $row['lname'] ?>
           </h2>
 
+          <button onclick="chekDiagnosa()">Click</button>
+          <script>
+            function chek() {
+              setTimeout(function() {
+                iziToast.warning({
+                  title: 'Caution',
+                  message: 'You forgot important data',
+                  position: 'center',
+                  onOpening: function() {
+                    setTimeout(function() {
+                      window.location = "./diagnosa-mandiri.php";
+                    }, 2000)
+                  }
+                });
+
+              }, )
+
+            }
+          </script>
 
 
           <!-- <a href="" class="btn btn-primary btn-round" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</a> -->

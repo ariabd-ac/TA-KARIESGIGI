@@ -31,6 +31,12 @@
             <span>Chat</span>
           </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link " href="./artikel.php">
+            <i class="material-icons">article</i>
+            <span>Artikel</span>
+          </a>
+        </li>
       <?php }
       ?>
       <!-- <li class="nav-item">

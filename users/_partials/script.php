@@ -11,8 +11,23 @@
 <script src="./assets/js/users.js"></script>
 <script src="./assets/js/chat.js"></script>
 
+<script>
+  function chekDiagnosa() {
+    setTimeout(function() {
+      iziToast.warning({
+        title: "Caution",
+        message: "You forgot important data",
+        position: "center",
+      });
+      setTimeout(function() {
+        window.location = "./diagnosa-mandiri.php";
+      }, 3000);
+    }, )
+  }
+</script>
+
 <script src="./assets/js/check.js"></script>
-<script src="./assets/js/gejalaCheck.js"></script>
+<!-- <script src="./assets/js/gejalaCheck.js"></script> -->
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -27,6 +42,15 @@
 <!-- swett -->
 <!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="../libs/node_modules/sweetalert2/dist/sweetalert2.all.js"></script> -->
+
+<!-- sw -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+
+
+<!-- izy -->
+
+<script src="../libs/izitoast/dist/js/iziToast.min.js" type="text/javascript"></script>
+
 
 </body>
 

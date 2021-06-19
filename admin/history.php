@@ -22,7 +22,7 @@ if ($_SESSION['level'] != 'admin') {
 <?php
 include './_partials/head.php';
 ?>
-<div class="container-fluid">
+<div class="container-fluid" style="height: 100vh;overflow: scroll;">
   <div class="row">
     <!-- Main Sidebar -->
     <?php
@@ -81,7 +81,9 @@ include './_partials/head.php';
                           ?>
                           <?= $penyakit ?></td>
                         <td class="text-center">
-                          <a href="pakar.php?a=del-history&username=<?= $sql['username'] ?>" class="btn btn-danger btn-round btn-sm">Del</a>
+                          <!-- <?= $sql['username'] ?> -->
+                          <!-- <a href="pakar.php?a=del-history&username=<?= $sql['username'] ?>" class="btn btn-danger btn-round btn-sm">Del</a> -->
+                          <a href="del-history.php?username=<?= $sql['username'] ?>" class="btn btn-danger btn-round btn-sm">Del</a>
                         </td>
                       </tr>
                     <?php } ?>
