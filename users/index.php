@@ -37,7 +37,7 @@ include './_partials/head.php';
             Hai <?php echo $row['fname'] . " " . $row['lname'] ?>
           </h2>
 
-          <button onclick="chekDiagnosa()">Click</button>
+          <!-- <button onclick="chekDiagnosa()">Click</button>
           <script>
             function chek() {
               setTimeout(function() {
@@ -55,7 +55,7 @@ include './_partials/head.php';
               }, )
 
             }
-          </script>
+          </script> -->
 
 
           <!-- <a href="" class="btn btn-primary btn-round" data-bs-toggle="modal" data-bs-target="#exampleModal">Tambah Data</a> -->

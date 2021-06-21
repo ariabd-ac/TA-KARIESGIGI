@@ -39,7 +39,7 @@ include './_partials/head.php';
         <div class="row mt-4" style="">
           <div class="card">
             <div class="card-header">
-              <h4 class="card-title"> Tabel Riwayat Konsultasi User</h4>
+              <h4 class="card-title">Riwayat Konsultasi User</h4>
               <div class="update pull-right">
                 <a href="./history.php" class="btn btn-primary btn-round">Refresh</a>
               </div>

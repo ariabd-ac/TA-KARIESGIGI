@@ -29,15 +29,15 @@ include './_partials/head.php';
       <div class="main-content-container container-fluid px-4">
         <!-- Small Stats Blocks -->
 
-        <div class="row mt-4" style="">
+        <div class="row mt-4">
 
           <div class="chat-wrapper">
             <div class="chat-title">
-              <h1>Jengkelin Bot</h1>
-              <!-- <h2>i am customer support chat bot</h2> -->
-              <figure class="avatar">
-                <img src="assets/css/bot.png" />
-              </figure>
+              <h1>Dental Clinic Bot</< /h1>
+                <!-- <h2>i am customer support chat bot</h2> -->
+                <figure class="avatar">
+                  <img src="assets/css/bot.png" />
+                </figure>
             </div>
             <div class="messages">
               <div class="messages-content"></div>
