@@ -60,7 +60,7 @@ include './_partials/head.php';
                           <span class="input-group-text">Upload Photo</span>
                         </div>
                         <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="img" name="img">
+                          <input type="file" class="custom-file-input" id="img" name="img" accept="image/*">
                           <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
                       </div>

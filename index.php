@@ -21,6 +21,13 @@ session_start();
 			/* opacity: 0.5; */
 		}
 	</style>
+	<!-- sweetalert -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css">
+	<script src="https://kit.fontawesome.com/08186bef1d.js" crossorigin="anonymous"></script>
+	<!-- end -->
+	<!-- animate -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<!-- end -->
 	<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 	<df-messenger intent="WELCOME" chat-title="latdoc" agent-id="bd12c91f-1eec-4692-8fa8-10a429495a55" language-code="id"></df-messenger> -->
 </head>
@@ -70,11 +77,34 @@ session_start();
 	?>
 
 	<!--  Scripts-->
+	<script>
+		// let modals = document.elementById('modal9');
+		// console.log('m', modals)
+		setTimeout(function() {
+			Swal.fire({
+				imageUrl: 'http://localhost/pakar_gigi/assets/img/image1.jpeg',
+				width: 500,
+				imageHeight: 500,
+				showClass: {
+					popup: 'animate__animated animate__fadeInDown'
+				},
+				hideClass: {
+					popup: 'animate__animated animate__fadeOutUp'
+				},
+				showConfirmButton: false,
+				showCloseButton: true,
+				html: '<b>Install Aplikasi di handphone anda</b>, ' +
+					'<a href="//sweetalert2.github.io">links</a> ',
+				timer: 7000
+			})
+		}, 1000)
+	</script>
 	<script src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/materialize.min.js"></script>
 	<script src="./assets/js/api.js"></script>
 	<script src="./assets/js/custom.js"></script>
 	<script src="./assets/js/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
 </body>
 
 </html>

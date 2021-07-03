@@ -1,8 +1,16 @@
 <?php
 session_start();
-if (isset($_SESSION['unique_id'])) {
+
+if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'user') {
   header("location: ../users/index.php");
+} else if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'admin') {
+  header("location: ../admin/index.php");
+} else if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'doctor') {
+  header("location: ../dokter/index.php");
+} else if (isset($_SESSION['unique_id']) && $_SESSION['level']  == 'isDoctor') {
+  header("location: ../dokter/index.php");
 }
+
 ?>
 
 <?php include_once "header.php"; ?>

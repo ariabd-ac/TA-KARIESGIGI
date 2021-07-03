@@ -34,10 +34,10 @@
       <?php endforeach; ?>
 
     </div>
-    <div class="center m-3">
-      <button type="button" class="btn light-blue text-lighten-2 waves-effect waves-light my-3" id="tampil2">Tampilkan Lebih Banyak <i class="material-icons right">queue_play_next</i></button>
-      <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
-    </div>
+    <!-- <div class="center m-3">
+      <button type="button" class="btn light-blue text-lighten-2 waves-effect waves-light my-3" id="tampil2">Tampilkan Lebih Banyak <i class="material-icons right">queue_play_next</i></button> -->
+    <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+    <!-- </div> -->
   </div>
 </div>
 

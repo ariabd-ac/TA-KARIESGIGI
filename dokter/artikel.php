@@ -41,40 +41,30 @@ include './_partials/head.php';
                   </a>
                 </div>
               </div>
-              <div class="row" style="background-color: blue;overflow: hidden;">
-
+              <div class="row">
                 <?php
                 $no = 1;
                 $sqls = mysqli_query($conn, "SELECT * FROM tabel_artikel");
                 foreach ($sqls as $sql) : ?>
-                  <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xs-6 col-xl-6 mb-4">
-                    <div class="card" style="padding: 10px;">
-                      <div class="img" style="">
-                        <img src="../admin/assets/images/artikel/<?= $sql['img'] ?>" alt="img-artikel" style="height:100%; width: 100%">
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card card-small card-post card-post--1">
+                      <div class="card-post__image" style="background-image: url('../admin/assets/images/artikel/<?= $sql['img'] ?>');">
+                        <a href="#" style="text-decoration: none;" class="card-post__category badge badge-pill badge-warning">Health</a>
+                        <div class="card-post__author d-flex">
+                          <!-- <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/0.jpg');">Written by Anna Kunis</a> -->
+                          <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4>
+                        </div>
                       </div>
-                      <h3><?= $sql['title'] ?></h3>
-                      <div class="content-article">
-                        <p><?= $sql['content'] ?></p>
-                        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa non autem dolore quis suscipit aspernatur ipsum? Reiciendis cumque sequi tempore nam dignissimos eum ipsa! Hic praesentium atque cumque veritatis modi, eum in vel excepturi magnam similique deserunt sed earum omnis enim quidem rerum rem quas dolor! Vero dolorum maiores beatae natus sint. Qui, earum. Ipsam, blanditiis aliquid ad laudantium tempora quis, ullam, quisquam vero aliquam tenetur maxime natus molestias quasi in officiis corrupti ex enim voluptatibus nostrum minus iusto quo odit deserunt iste? Nam est consequuntur enim cumque libero quo iusto voluptatem aspernatur architecto fugit suscipit porro accusantium iure, nesciunt sed consequatur quam odit. Fuga, vel distinctio obcaecati quam molestiae dignissimos autem libero modi tenetur iste possimus doloremque sequi sit. Adipisci ducimus laudantium maiores autem quia necessitatibus, quas odio aperiam, soluta minus omnis blanditiis sunt placeat ad mollitia pariatur ut unde nulla molestias modi quo esse! Soluta, delectus debitis, deserunt earum minima, eum fuga dolores possimus fugit obcaecati laboriosam quae sapiente ullam ad nisi natus facilis aliquam animi velit repudiandae sed ut dicta repellendus asperiores? Quisquam praesentium tempore culpa quo. Dolores quod voluptas consequatur molestiae quam earum ratione atque, rerum nobis nisi magnam officiis, quis placeat tempore neque ullam minima vitae ab quae esse! Fugit nobis quia et alias? Impedit maxime nostrum accusantium corporis cupiditate? Distinctio consectetur velit provident sed amet quam at eligendi delectus, facere placeat ex ea mollitia expedita, veritatis doloremque voluptatibus autem vel atque dicta accusamus ratione? Facere officiis illo facilis laudantium quae autem vitae soluta fuga exercitationem, mollitia architecto atque placeat quisquam dignissimos doloribus nam labore eius suscipit! Nisi voluptate similique ipsum rem illo ab asperiores deleniti dolorum accusantium animi laudantium fugiat repellat cupiditate sunt vero sequi, quidem ipsa vel facere aliquam amet quibusdam nesciunt? Totam sint excepturi aperiam consequatur quasi quod nulla exercitationem ducimus inventore.</p> -->
-                      </div>
-                      <h6 style="text-align:right"><?= $sql['author'] ?></h6>
-                      <h6 style="text-align:right"><?= $sql['created_at'] ?></h6>
-                      <div class="action">
-                        <a href='./edit-artikel.php?id=<?= $sql['id_artikel'] ?>' class="btn btn-secondary btn-sm" title="edit">
-                          <i class="material-icons">edit</i>
-                        </a>
-                        <a href="#" class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal<?= $sql['id_artikel'] ?>" title="detail">
-                          <i class="material-icons">zoom_in</i>
-                        </a>
-                        <a href="./del-artikel.php?id=<?= $sql['id_artikel'] ?>" class="btn btn-danger btn-sm" title="detail">
-                          <i class="material-icons">delete</i>
-                        </a>
-
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a class="text-fiord-blue" style="text-decoration:none;" href="#"><?= $sql['title'] ?></a>
+                        </h5>
+                        <p class="card-text d-inline-block mb-3" style="display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;"><?= $sql['content'] ?></p>
+                        <span class="text-muted"><?= $sql['created_at'] ?></span>
                       </div>
                     </div>
                   </div>
                 <?php endforeach; ?>
-
               </div>
             </div>
           </div>

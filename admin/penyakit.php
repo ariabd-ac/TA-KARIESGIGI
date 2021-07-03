@@ -143,11 +143,13 @@ include './_partials/head.php';
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Keterangan</label>
-                      <input type="text" class="form-control" id="keterangan" name="keterangan" value="<?= $sql['keterangan'] ?>">
+                      <!-- <input type="text" class="form-control" id="keterangan" name="keterangan" value="<?= $sql['keterangan'] ?>"> -->
+                      <textarea class="form-control" id="keterangan" name="keterangan" id="floatingTextarea2" style="height: 100px"><?= $sql['keterangan'] ?></textarea>
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Solusi</label>
-                      <input type="text" class="form-control" id="solusi" name="solusi" value="<?= $sql['solusi'] ?>">
+                      <!-- <input type="text" class="form-control" id="solusi" name="solusi" value="<?= $sql['solusi'] ?>"> -->
+                      <textarea class="form-control" id="solusi" name="solusi" id="floatingTextarea2" style="height: 100px"><?= $sql['solusi'] ?></textarea>
                     </div>
                     <button type="submit" name="update-penyakit" class="btn btn-primary">Submit</button>
                   </form>

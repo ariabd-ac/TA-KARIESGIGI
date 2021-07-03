@@ -45,7 +45,7 @@ if (!isset($_POST['periksa'])) { ?>
                   <div class="" style="height: 40px; width: 50;background-color: blue;"></div>
                   <div class="" style="height: 40px; width: 50;background-color: yellow;"></div> -->
                   <div class="row">
-                    <div class="col-md-5 col-lg-5 col-5">
+                    <div class="col-md-5 col-lg-5  col-xs-10">
                       <?php
                       $sqls = mysqli_query($conn, "SELECT * FROM tabel_gejala WHERE kode_gejala BETWEEN 'G1' AND 'G17'") or die(mysqli_error($conn));
                       while ($sql = mysqli_fetch_array($sqls)) { ?>
@@ -63,7 +63,7 @@ if (!isset($_POST['periksa'])) { ?>
                         <hr>
                       <?php } ?>
                     </div>
-                    <div class="col-md-7 col-lg-7 col-7">
+                    <div class="col-md-7 col-lg-7 col-xs-10">
                       <?php
                       $sqls = mysqli_query($conn, "SELECT * FROM tabel_gejala WHERE kode_gejala BETWEEN 'G18' AND 'G9' ORDER BY kode_gejala DESC") or die(mysqli_error($conn));
                       while ($sql = mysqli_fetch_array($sqls)) { ?>

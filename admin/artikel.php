@@ -46,31 +46,21 @@ include './_partials/head.php';
                 $no = 1;
                 $sqls = mysqli_query($conn, "SELECT * FROM tabel_artikel");
                 foreach ($sqls as $sql) : ?>
-                  <!-- // $sql['title'];
-                  // var_dump($sql['title']);
-                  // die;
-                  ?> -->
-                  <!-- // foreach ($sqls as $sql) { ?> -->
-                  <div class="col-md-6 col-lg-6 col-6 col-sm-6 col-xs-6 col-xl-6 mb-4">
-                    <div class="card" style="padding: 10px;">
-                      <div class="img" style="">
-                        <img src="./assets/images/artikel/<?= $sql['img'] ?>" alt="img-artikel" style="height:100%; width: 100%;">
+                  <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
+                    <div class="card card-small card-post card-post--1">
+                      <div class="card-post__image" style="background-image: url('./assets/images/artikel/<?= $sql['img'] ?>');">
+                        <a href="#" style="text-decoration: none;" class="card-post__category badge badge-pill badge-warning">Health</a>
+                        <div class="card-post__author d-flex">
+                          <!-- <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/0.jpg');">Written by Anna Kunis</a> -->
+                          <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4>
+                        </div>
                       </div>
-                      <h3><?= $sql['title'] ?></h3>
-                      <p style="display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;"><?= $sql['content'] ?></p>
-                      <h6 style="text-align:right"><?= $sql['author'] ?></h6>
-                      <h6 style="text-align:right"><?= $sql['created_at'] ?></h6>
-                      <div class="action">
-                        <a href='./edit-artikel.php?id=<?= $sql['id_artikel'] ?>' class="btn btn-secondary btn-sm" title="edit">
-                          <i class="material-icons">edit</i>
-                        </a>
-                        <a href="#" class="btn btn-warning btn-sm" title="detail">
-                          <i class="material-icons">zoom_in</i>
-                        </a>
-                        <a href="./del-artikel.php?id=<?= $sql['id_artikel'] ?>" class="btn btn-danger btn-sm" title="detail">
-                          <i class="material-icons">delete</i>
-                        </a>
-
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          <a class="text-fiord-blue" style="text-decoration:none;" href="#"><?= $sql['title'] ?></a>
+                        </h5>
+                        <p class="card-text d-inline-block mb-3" style="display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;"><?= $sql['content'] ?></p>
+                        <span class="text-muted"><?= $sql['created_at'] ?></span>
                       </div>
                     </div>
                   </div>
