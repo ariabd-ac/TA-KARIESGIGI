@@ -12,7 +12,7 @@ if ($_SESSION['level']  != 'doctor' && $_SESSION['level']  != 'isDoctor') {
 <?php
 include './_partials/head.php';
 ?>
-<div class="container-fluid">
+<div class="container-fluid" style="height: 100vh;overflow: scroll;">
   <div class="row">
     <!-- Main Sidebar -->
     <?php

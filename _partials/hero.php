@@ -15,20 +15,27 @@
 <!-- Tab Tambahan -->
 <div class="row mb-0 divider-card">
   <div class="col s10 offset-s1 m2 offset-m3">
-    <div class="icon-block card-panel p-3 z-depth-3">
-      <h4 class="center orange-text text-lighten-2"><i class="material-icons">zoom_in</i></h4>
+    <div class="card-panel p-3 z-depth-3">
+      <h4 class="center orange-text text-lighten-2"><i class="material-icons medium">zoom_in</i></h4>
       <h6 class="center">Diagnosa Dengan Dataset Ahli</h6><br>
     </div>
+    <!-- <div class="card-panel p-3 z-depth-3">
+      <div class="card-image m-3 mt-4">
+        <p class="center orange-text text-lighten-2 pt-3 px-2"><i class="material-icons medium">zoom_in</i></p>
+      </div>
+      <h6 class="center">Diagnosa Dengan Dataset Ahli</h6><br>
+    </div> -->
   </div>
+
   <div class="col s10 offset-s1 m2">
-    <div class="icon-block card-panel p-3 z-depth-3">
-      <h4 class="center orange-text text-lighten-2"><i class="material-icons">flash_on</i></h4>
+    <div class="card-panel p-3 z-depth-3">
+      <h4 class="center orange-text text-lighten-2"><i class="material-icons medium">flash_on</i></h4>
       <h6 class="center">Sigap Mendiagnosa Anda</h6><br>
     </div>
   </div>
   <div class="col s10 offset-s1 m2">
-    <div class="icon-block card-panel p-3 z-depth-3">
-      <h4 class="center orange-text text-lighten-2"><i class="material-icons">settings</i></h4>
+    <div class="card-panel p-3 z-depth-3">
+      <h4 class="center orange-text text-lighten-2"><i class="material-icons medium">settings</i></h4>
       <h6 class="center">Cermat dan Mudah digunakan</h6><br>
     </div>
   </div>

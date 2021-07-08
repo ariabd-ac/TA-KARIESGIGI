@@ -17,55 +17,55 @@
     <ul class="nav flex-column">
       <li class="nav-item">
         <a class="nav-link" href="./index.php">
-          <i class="material-icons">edit</i>
+          <i class="material-icons">dashboard</i>
           <span>Dashboard</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./gejala.php">
-          <i class="material-icons">vertical_split</i>
+          <i class="material-icons">settings_input_svideo</i>
           <span>Data gejala</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./penyakit.php">
-          <i class="material-icons">note_add</i>
+          <i class="material-icons">coronavirus</i>
           <span>Data Penyakit</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./rules.php">
-          <i class="material-icons">view_module</i>
+          <i class="material-icons">addchart</i>
           <span>Rules</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./history.php">
-          <i class="material-icons">table_chart</i>
+          <i class="material-icons">history</i>
           <span>History</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./list-users.php">
-          <i class="material-icons">person</i>
+          <i class="material-icons">question_answer</i>
           <span>Chat</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./chatbot.php">
-          <i class="material-icons">error</i>
+          <i class="material-icons">quickreply</i>
           <span>Chatbot</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./management.php">
-          <i class="material-icons">error</i>
+          <i class="material-icons">admin_panel_settings</i>
           <span>Management Users</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link " href="./artikel.php">
-          <i class="material-icons">error</i>
+          <i class="material-icons">article</i>
           <span>Artikel</span>
         </a>
       </li>

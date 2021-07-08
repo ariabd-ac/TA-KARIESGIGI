@@ -94,11 +94,11 @@ include './_partials/head.php';
                 <form method="post">
                   <div class="mb-3">
                     <label for="kodeGejala" class="form-label">Kode Gejala</label>
-                    <input type="text" class="form-control" id="kode-gejala" aria-describedby="kode-gejala" name="kode-gejala" placeholder="Contoh: G01, G02 ...">
+                    <input type="text" class="form-control" id="kode-gejala" aria-describedby="kode-gejala" name="kode-gejala" placeholder="Contoh: G01, G02 ..." required>
                   </div>
                   <div class="mb-3">
                     <label for="nama_gejala" class="form-label">Nama Gejala</label>
-                    <input type="text" class="form-control" id="nama-gejala" name="nama-gejala">
+                    <input type="text" class="form-control" id="nama-gejala" name="nama-gejala" required>
                   </div>
                   <button type="submit" name="simpan-gejala" class="btn btn-primary">Submit</button>
                 </form>
@@ -123,11 +123,11 @@ include './_partials/head.php';
                   <form method="post">
                     <div class="mb-3">
                       <label for="kodeGejala" class="form-label">Kode Gejala</label>
-                      <input type="text" class="form-control" id="kode-gejala" aria-describedby="kode-gejala" name="kode-gejala" placeholder="Contoh: G01, G02 ..." value="<?= $sql['kode_gejala'] ?>">
+                      <input type="text" class="form-control" id="kode-gejala" aria-describedby="kode-gejala" name="kode-gejala" placeholder="Contoh: G01, G02 ..." value="<?= $sql['kode_gejala'] ?>" required>
                     </div>
                     <div class="mb-3">
                       <label for="nama_gejala" class="form-label">Nama Gejala</label>
-                      <input type="text" class="form-control" id="nama-gejala" name="nama-gejala" value="<?= $sql['nama_gejala'] ?>">
+                      <input type="text" class="form-control" id="nama-gejala" name="nama-gejala" value="<?= $sql['nama_gejala'] ?>" required>
                     </div>
                     <button type="submit" name="update-gejala" class="btn btn-primary">Submit</button>
                   </form>

@@ -98,19 +98,19 @@ include './_partials/head.php';
                 <form method="post">
                   <div class="mb-3">
                     <label for="kodeGejala" class="form-label">Kode Penyakit</label>
-                    <input type="text" class="form-control" id="kode-penyakit" aria-describedby="kode-penyakit" name="kode-penyakit" placeholder="Contoh: P01, P02 ...">
+                    <input type="text" class="form-control" id="kode-penyakit" aria-describedby="kode-penyakit" name="kode-penyakit" required placeholder="Contoh: P01, P02 ...">
                   </div>
                   <div class="mb-3">
                     <label for="nama_gejala" class="form-label">Nama Penyakit</label>
-                    <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit">
+                    <input type="text" required class="form-control" id="nama-penyakit" name="nama-penyakit">
                   </div>
                   <div class="mb-3">
                     <label for="nama_gejala" class="form-label">Keterangan</label>
-                    <textarea class="form-control" id="keterangan" name="keterangan" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control" required id="keterangan" name="keterangan" id="floatingTextarea2" style="height: 100px"></textarea>
                   </div>
                   <div class="mb-3">
                     <label for="nama_gejala" class="form-label">Solusi</label>
-                    <textarea class="form-control" id="solusi" name="solusi" id="floatingTextarea2" style="height: 100px"></textarea>
+                    <textarea class="form-control" required id="solusi" name="solusi" id="floatingTextarea2" style="height: 100px"></textarea>
                   </div>
                   <button type="submit" name="simpan-penyakit" class="btn btn-primary">Submit</button>
                 </form>
@@ -135,21 +135,21 @@ include './_partials/head.php';
                   <form method="post">
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Kode Penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="kode-penyakit" value="<?= $sql['kode_penyakit'] ?>" readonly>
+                      <input type="text" required class="form-control" id="nama-penyakit" name="kode-penyakit" value="<?= $sql['kode_penyakit'] ?>" readonly>
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Nama Penyakit</label>
-                      <input type="text" class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>">
+                      <input type="text" required class="form-control" id="nama-penyakit" name="nama-penyakit" value="<?= $sql['nama_penyakit'] ?>">
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Keterangan</label>
                       <!-- <input type="text" class="form-control" id="keterangan" name="keterangan" value="<?= $sql['keterangan'] ?>"> -->
-                      <textarea class="form-control" id="keterangan" name="keterangan" id="floatingTextarea2" style="height: 100px"><?= $sql['keterangan'] ?></textarea>
+                      <textarea class="form-control" required id="keterangan" name="keterangan" id="floatingTextarea2" style="height: 100px"><?= $sql['keterangan'] ?></textarea>
                     </div>
                     <div class="mb-3">
                       <label for="nama_penyakit" class="form-label">Solusi</label>
                       <!-- <input type="text" class="form-control" id="solusi" name="solusi" value="<?= $sql['solusi'] ?>"> -->
-                      <textarea class="form-control" id="solusi" name="solusi" id="floatingTextarea2" style="height: 100px"><?= $sql['solusi'] ?></textarea>
+                      <textarea class="form-control" required id="solusi" name="solusi" id="floatingTextarea2" style="height: 100px"><?= $sql['solusi'] ?></textarea>
                     </div>
                     <button type="submit" name="update-penyakit" class="btn btn-primary">Submit</button>
                   </form>

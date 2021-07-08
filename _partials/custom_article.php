@@ -27,7 +27,7 @@
             </div>
             <div class="card-action right-align">
               <!-- <a class="m-0 waves-effect waves-light" href="#modal1">Baca Lebih Lanjut <i class="material-icons right">chevron_right</i></a> -->
-              <a class="waves-effect waves-light btn modal-trigger" href="#modal<?= $sql['id_artikel'] ?>">Baca Lebih Lanjut <i class="material-icons right">chevron_right</i></a>
+              <a class="waves-effect waves-light btn modal-trigger" href="#modal<?= $sql['id_artikel'] ?>">Baca Lebih Detail <i class="material-icons right">chevron_right</i></a>
             </div>
           </div>
         </div>
@@ -57,13 +57,13 @@ foreach ($sqls as $sql) : ?>
         <img src="./admin/assets/images/artikel/<?= $sql['img'] ?>" height="130px">
       </div>
       <h4><?= $sql['title']; ?></h4>
-      <p>Author : <?= $sql['author']; ?></p>
+      <p>Penulis : <b><?= $sql['author']; ?></b></p>
       <p><?= $sql['content']; ?></p>
       <hr />
-      <p><?= $sql['created_at']; ?></p>
+      <p>Diterbitkan : <b> <?= $sql['created_at']; ?></b></p>
     </div>
     <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tutup</a>
     </div>
   </div>
 

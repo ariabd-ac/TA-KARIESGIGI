@@ -49,16 +49,20 @@ include './_partials/head.php';
                   <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card card-small card-post card-post--1">
                       <div class="card-post__image" style="background-image: url('./assets/images/artikel/<?= $sql['img'] ?>');">
-                        <a href="#" style="text-decoration: none;" class="card-post__category badge badge-pill badge-warning">Health</a>
-                        <div class="card-post__author d-flex">
+                        <div class="" style="display:flex;width:100%;height:20px;justify-content: flex-end;margin-top: 10px;margin-right: 10px;">
+                          <a href="./del-artikel.php?id=<?= $sql['id_artikel'] ?>" style="text-decoration: none;margin-right: 10px;" class="badge badge-pill badge-warning">Hapus</a>
+                          <a href='./edit-artikel.php?id=<?= $sql['id_artikel'] ?>' style="text-decoration: none;margin-right: 10px;" class="badge badge-pill badge-info">Ubah</a>
+                        </div>
+                        <div class="card-post__author d-flex mb-4">
                           <!-- <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/0.jpg');">Written by Anna Kunis</a> -->
-                          <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4>
+                          <h4 style="margin-top: 50px;"><?= $sql['title'] ?></h4>
+                          <!-- <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4> -->
                         </div>
                       </div>
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <!-- <h5 class="card-title">
                           <a class="text-fiord-blue" style="text-decoration:none;" href="#"><?= $sql['title'] ?></a>
-                        </h5>
+                        </h5> -->
                         <p class="card-text d-inline-block mb-3" style="display:inline-block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 100%;"><?= $sql['content'] ?></p>
                         <span class="text-muted"><?= $sql['created_at'] ?></span>
                       </div>

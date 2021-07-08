@@ -41,6 +41,7 @@ include './_partials/head.php';
                   </a>
                 </div>
               </div>
+
               <div class="row">
                 <?php
                 $no = 1;
@@ -49,10 +50,14 @@ include './_partials/head.php';
                   <div class="col-lg-3 col-md-6 col-sm-12 mb-4">
                     <div class="card card-small card-post card-post--1">
                       <div class="card-post__image" style="background-image: url('../admin/assets/images/artikel/<?= $sql['img'] ?>');">
-                        <a href="#" style="text-decoration: none;" class="card-post__category badge badge-pill badge-warning">Health</a>
+                        <div class="" style="display:flex;width:100%;height:20px;justify-content: flex-end;margin-top: 10px;margin-right: 10px;">
+                          <a href="./del-artikel.php?id=<?= $sql['id_artikel'] ?>" style="text-decoration: none;margin-right: 10px;" class="badge badge-pill badge-warning">Hapus</a>
+                          <a href='./edit-artikel.php?id=<?= $sql['id_artikel'] ?>' style="text-decoration: none;margin-right: 10px;" class="badge badge-pill badge-info">Ubah</a>
+                        </div>
                         <div class="card-post__author d-flex">
                           <!-- <a href="#" class="card-post__author-avatar card-post__author-avatar--small" style="background-image: url('images/avatars/0.jpg');">Written by Anna Kunis</a> -->
-                          <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4>
+                          <!-- <h4 style="margin-top: 50px;"><?= $sql['title'] ?></h4> -->
+                          <!-- <h4 style="margin-top: 50px;"><?= $sql['author'] ?></h4> -->
                         </div>
                       </div>
                       <div class="card-body">

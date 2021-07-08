@@ -57,7 +57,7 @@ include './_partials/head.php';
                         <form action="" method="post" autocomplete="off" enctype="multipart/form-data">
                           <label for="basic-url">Judul Atikel</label>
                           <div class="input-group mb-3">
-                            <input type="text" class="form-control" name="title" id="title" value="<?= $dt['author'] ?>" placeholder="Dengan cara ini merawat kesehatan gigi" aria-label="title" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" name="title" id="title" value="<?= $dt['title'] ?>" placeholder="Dengan cara ini merawat kesehatan gigi" aria-label="title" aria-describedby="basic-addon1">
                           </div>
 
                           <label for="basic-url">Content</label>
