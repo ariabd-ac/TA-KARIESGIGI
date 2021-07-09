@@ -10,7 +10,7 @@
   </li>
   <li><a class="waves-effect" href="#perkenalan">Perkenalan</a></li>
   <li><a class="waves-effect" href="#panduan">Panduan Penggunaan</a></li>
-  <li><a class="waves-effect" href="#tanya-dokter">Tanya Dokter</a></li>
+  <!-- <li><a class="waves-effect" href="#tanya-dokter">Tanya Dokter</a></li> -->
   <li><a class="waves-effect" href="#artikel">Artikel</a></li>
   <li><a class="waves-effect" href="#tentang">Tentang</a></li>
 </ul>

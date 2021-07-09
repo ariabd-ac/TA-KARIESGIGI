@@ -7,7 +7,7 @@
 
     <!-- Timeline -->
     <div class="timeline">
-      <div class="timeline-event">
+      <div class="timeline-event" data-aos="fade-right">
         <div class="card horizontal timeline-content">
           <div class="card-image m-3 mt-4">
             <p class="center orange-text text-lighten-2 pt-3 px-2"><i class="material-icons medium">edit</i></p>
@@ -23,7 +23,7 @@
         <div class="timeline-badge blue white-text"><i class="material-icons">edit</i></div>
         <span class="squiggle hide-on-small-only" style="left: -100px; background-size: auto 35px;"></span>
       </div>
-      <div class="timeline-event">
+      <div class="timeline-event" data-aos="fade-left">
         <div class="card horizontal timeline-content">
           <div class="card-image m-3 mt-4">
             <p class="center orange-text text-lighten-2 mt-4 pt-4 px-2"><i class="material-icons medium">line_weight</i></p>
@@ -38,7 +38,7 @@
         </div>
         <div class="timeline-badge red white-text"><i class="material-icons">line_weight</i></div>
       </div>
-      <div class="timeline-event">
+      <div class="timeline-event" data-aos="fade-right">
         <div class="card horizontal timeline-content">
           <div class="card-image m-3 mt-4">
             <p class="center orange-text text-lighten-2 pt-3 px-2"><i class="material-icons medium">assignment</i></p>

@@ -12,7 +12,7 @@
       $no = 1;
       $sqls = mysqli_query($conn, "SELECT * FROM tabel_artikel");
       foreach ($sqls as $sql) : ?>
-        <div class="col s12 m4 article2">
+        <div class="col s12 m4 article2" data-aos="flip-up">
           <div class="card z-depth-2">
             <div class="card-image">
               <img src="./admin/assets/images/artikel/<?= $sql['img'] ?>" height="130px">

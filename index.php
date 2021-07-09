@@ -30,6 +30,9 @@ session_start();
 	<!-- end -->
 	<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
 	<df-messenger intent="WELCOME" chat-title="latdoc" agent-id="bd12c91f-1eec-4692-8fa8-10a429495a55" language-code="id"></df-messenger> -->
+
+	<!-- aos -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -60,9 +63,7 @@ session_start();
 	?>
 
 
-	<?php
-	include './_partials/article.php'
-	?>
+
 
 
 
@@ -98,6 +99,13 @@ session_start();
 				timer: 7000
 			})
 		}, 1000)
+	</script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			easing: 'ease',
+			debounceDelay: 50,
+		});
 	</script>
 	<script src="./assets/js/jquery.min.js"></script>
 	<script src="./assets/js/materialize.min.js"></script>

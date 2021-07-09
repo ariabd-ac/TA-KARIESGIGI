@@ -7,7 +7,7 @@
     </a>
     <ul class="right">
       <li>
-        <a class="tooltipped btn waves-effect waves-light pulse modal-trigger" href="./auth/" data-position="bottom" data-tooltip="Masuk Sebagai Pengelola" id="masuk"><i class="material-icons left mr-0">exit_to_app</i><span class="hide-on-med-and-down">Masuk</span></a>
+        <a class="tooltipped btn waves-effect waves-light pulse modal-trigger" href="./auth/login.php" data-position="bottom" data-tooltip="Masuk Sebagai Pengelola" id="masuk"><i class="material-icons left mr-0">exit_to_app</i><span class="hide-on-med-and-down">Masuk</span></a>
       </li>
     </ul>
   </div>
